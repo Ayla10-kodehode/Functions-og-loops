@@ -30,7 +30,6 @@ function autoReply(customFunction) {
 }
 autoReply(console.log);
 
-
 /* Exercise #3b: Create a function that will display some provided text on the website.
                   For example, assuming you named your function: display
                   I should be able to call (run/execute) it with display("hello world!")
@@ -41,11 +40,13 @@ autoReply(console.log);
                   console.log the result.
 */
 
-const display = (callback) => {
+const display = (txt) => {
   //! Your code here
-  
+  console.log(txt);
 };
 autoReply(display);
+
+
 
 /* Exercise #4: Create a function that takes two arguments:
                  1. a callback function
@@ -57,6 +58,7 @@ autoReply(display);
 
 function customAutoReply(method, str) {
   //! Your code here
+
 }
 
 customAutoReply(console.log, "This is also an automated response.");
@@ -96,11 +98,12 @@ autoReply(function (text) {
 
 
 
-function checkArray(callback, arr) {
+const checkArray = (callback, arr) => {
   //! Your code here
-
+  for (i = 0; i < arr.length; i++){
+    callback(arr[i])
+  }
 }
-
 const fiveWords = ["one", "two", "three", "four", "five"];
 const threeFruits = ["apple", "banana", "mango"];
 
@@ -121,7 +124,10 @@ checkArray(console.log, threeFruits);
 
 function loopThrough(arr) {
   //! Your code here
-}
+  
+  }
+  
+
 
 loopThrough(fiveWords);
 loopThrough(threeFruits);
