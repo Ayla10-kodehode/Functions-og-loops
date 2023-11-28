@@ -164,9 +164,11 @@ tripleArrayValues(nums2)
 */
 
 function logEvenOfArray(arr) {
-//! Your code here
-let evenNumbers = arr.filter()
-}
+  //! Your code here
+  let evenNumbers = arr.filter(num => num % 2 === 0)
+  console.log(evenNumbers)
+  }
+  
+  logEvenOfArray(nums);
+  logEvenOfArray(nums2);
 
-logEvenOfArray(nums);
-logEvenOfArray(nums2);
