@@ -74,7 +74,7 @@ autoReply(function (text) {
 console.log(text)
 });
 
-
+autoReply(() =>)
  
 
   
