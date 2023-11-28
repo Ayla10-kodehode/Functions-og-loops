@@ -58,7 +58,8 @@ autoReply(display);
 
 function customAutoReply(method, str) {
   //! Your code here
-
+  method(str)
+  console.log('This message is instead of "This is also an automated response"')
 }
 
 customAutoReply(console.log, "This is also an automated response.");
@@ -70,9 +71,13 @@ customAutoReply(console.log, "This is also an automated response.");
 
 autoReply(function (text) {
   //! Your code here
+console.log(text)
 });
 
 
+ 
+
+  
 /* Exercise #5: Create a function that takes the following parameters:
                  1. An array
                  2. A callback function
