@@ -124,7 +124,7 @@ checkArray(console.log, threeFruits);
 
 function loopThrough(arr) {
   //! Your code here
-  
+  arr.forEach((arr,index) => console.log(`${arr} at ${index}`));
   }
   
 
@@ -146,7 +146,12 @@ const nums2 = [4321, 43, 2, 897698, 321, 87];
 
 function tripleArrayValues(arr) {
   //! Your code here
+let tripleNums = arr.map((num) => num*3)
+console.log(tripleNums);
 }
+tripleArrayValues(nums)
+tripleArrayValues(nums2)
+
 
 /* Excercise #8: Use a different array method that will return a new array based on some filter,
                  For example lets say we just want odd numbers from the nums array:
@@ -160,6 +165,7 @@ function tripleArrayValues(arr) {
 
 function logEvenOfArray(arr) {
 //! Your code here
+let evenNumbers = arr.filter()
 }
 
 logEvenOfArray(nums);
