@@ -7,15 +7,14 @@ console.log(formatText("      Lorem IPSUM.    ")); // expected output (without q
 
 function formatText(str) {
   //! Your code here
-    return str.trim().toLowerCase()
-};
-
+  return str.trim().toLowerCase();
+}
 
 /* Exercise #2:
       Change the function in exercise #1 to be an arrow function.
       If you're getting errors: google javascript hoisting. You may need to move the console.log(formatText("      Lorem IPSUM.    ")) from line 7.
 */
-  //! Your code here
+//! Your code here
 const formatTextArrow = (str) => str.trim().toLowerCase();
 
 console.log(formatTextArrow("      Lorem IPSUM.    "));
@@ -26,7 +25,7 @@ console.log(formatTextArrow("      Lorem IPSUM.    "));
 
 function autoReply(customFunction) {
   //! Your code here
-  customFunction("This is an automated response.")
+  customFunction("This is an automated response.");
 }
 autoReply(console.log);
 
@@ -46,8 +45,6 @@ const display = (txt) => {
 };
 autoReply(display);
 
-
-
 /* Exercise #4: Create a function that takes two arguments:
                  1. a callback function
                  2. a string
@@ -58,8 +55,10 @@ autoReply(display);
 
 function customAutoReply(method, str) {
   //! Your code here
-  method(str)
-  console.log('This message is instead of "This is also an automated response"')
+  method(str);
+  console.log(
+    'This message is instead of "This is also an automated response"'
+  );
 }
 
 customAutoReply(console.log, "This is also an automated response.");
@@ -71,13 +70,9 @@ customAutoReply(console.log, "This is also an automated response.");
 
 autoReply(function (text) {
   //! Your code here
-console.log(text)
+  console.log(text);
 });
 
-autoReply(() =>)
- 
-
-  
 /* Exercise #5: Create a function that takes the following parameters:
                  1. An array
                  2. A callback function
@@ -101,12 +96,10 @@ autoReply(() =>)
                 (For this exercise please use traditional loops (not array methods), for-loop, while loop, or for-of loop)
 */
 
-
-
-const checkArray = (callback, arr) => {
+function checkArray(callback, arr) {
   //! Your code here
-  for (i = 0; i < arr.length; i++){
-    callback(arr[i])
+  for (i = 0; i < arr.length; i++) {
+    callback(arr[i]);
   }
 }
 const fiveWords = ["one", "two", "three", "four", "five"];
@@ -114,7 +107,6 @@ const threeFruits = ["apple", "banana", "mango"];
 
 checkArray(console.log, fiveWords);
 checkArray(console.log, threeFruits);
-
 
 /* Exercise #6: Similar to task 5, but instead of first declaring a function and then writing a loop by hand:
                  Use an array method that loops through an array and provides a callback function that will either console log or display each array element
@@ -129,10 +121,8 @@ checkArray(console.log, threeFruits);
 
 function loopThrough(arr) {
   //! Your code here
-  arr.forEach((arr,index) => console.log(`${arr} at ${index}`));
-  }
-  
-
+  arr.forEach((arr, index) => console.log(`${arr} at ${index}`));
+}
 
 loopThrough(fiveWords);
 loopThrough(threeFruits);
@@ -151,12 +141,11 @@ const nums2 = [4321, 43, 2, 897698, 321, 87];
 
 function tripleArrayValues(arr) {
   //! Your code here
-let tripleNums = arr.map((num) => num*3)
-console.log(tripleNums);
+  let tripleNums = arr.map((num) => num * 3);
+  console.log(tripleNums);
 }
-tripleArrayValues(nums)
-tripleArrayValues(nums2)
-
+tripleArrayValues(nums);
+tripleArrayValues(nums2);
 
 /* Excercise #8: Use a different array method that will return a new array based on some filter,
                  For example lets say we just want odd numbers from the nums array:
@@ -170,10 +159,9 @@ tripleArrayValues(nums2)
 
 function logEvenOfArray(arr) {
   //! Your code here
-  let evenNumbers = arr.filter(num => num % 2 === 0)
-  console.log(evenNumbers)
-  }
-  
-  logEvenOfArray(nums);
-  logEvenOfArray(nums2);
+  let evenNumbers = arr.filter((num) => num % 2 === 0);
+  console.log(evenNumbers);
+}
 
+logEvenOfArray(nums);
+logEvenOfArray(nums2);
