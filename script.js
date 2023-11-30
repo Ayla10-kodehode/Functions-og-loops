@@ -143,7 +143,7 @@ function tripleArrayValues(arr) {
   //! Your code here
   let tripleNums = arr.map((num) => num * 3);
   console.log(tripleNums);
-}
+};
 tripleArrayValues(nums);
 tripleArrayValues(nums2);
 
@@ -161,7 +161,7 @@ function logEvenOfArray(arr) {
   //! Your code here
   let evenNumbers = arr.filter((num) => num % 2 === 0);
   console.log(evenNumbers);
-}
+};
 
 logEvenOfArray(nums);
 logEvenOfArray(nums2);
